@@ -14,7 +14,7 @@ class Conversation(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ('-modified_at')
+        ordering = ('-modified_at', )
 
 
 class ConversationMessage(models.Model):
